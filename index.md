@@ -1,4 +1,7 @@
-Hier ist die angepasste Markdown-Syntax, die die Bilddateien aus Ihrem `images` Verzeichnis verwendet:
+---
+layout: mylayout.njk
+title: "Ihre Startseite"
+---
 
 ### Schritt 1: Installieren zusätzlicher Softwarekomponenten
 
