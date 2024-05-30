@@ -1,5 +1,5 @@
 ---
-
+layout: mylayout.njk
 title: "DotBot - Pages"
 ---
 
