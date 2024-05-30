@@ -1,11 +1,16 @@
+/* styles.css */
 body {
     margin: 0 auto;
     max-width: 800px;
     text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
 }
 
 h3 {
     margin-top: 50px;
+    font-size: 1.5em;
 }
 
 pre code {
@@ -13,22 +18,36 @@ pre code {
     font-family: 'Courier New', Courier, monospace;
     padding: 10px;
     display: block;
+    border-radius: 5px;
+    border: 1px solid #d3d3d3;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.5em;
 }
 
 img {
     max-width: 100%;
     height: auto;
-    display: block;
-    margin: 20px 0;
 }
 
-footer {
-    background-color: #007acc;
-    padding: 10px;
-    text-align: center;
-    color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+a:focus, button:focus {
+    outline: 2px solid #005fcc;
+    outline-offset: 2px;
 }
 
+/* Media Queries for mobile devices */
+@media (max-width: 600px) {
+    body {
+        font-size: 0.9em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    pre code {
+        font-size: 0.9em;
+    }
+}
