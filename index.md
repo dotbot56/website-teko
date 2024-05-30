@@ -1,5 +1,6 @@
 ---
 title: "DotBot - Pages"
+layout: mylayout.njk
 ---
 
 ### Schritt 1: Installieren zusätzlicher Softwarekomponenten
