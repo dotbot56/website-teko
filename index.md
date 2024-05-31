@@ -5,7 +5,7 @@ layout: mylayout.njk
 
 ### Schritt 1: Installieren zusätzlicher Softwarekomponenten
 
-Dani ish toll v0.1
+Dani ish toll v0.2
 
 Verbnden Sie sich mit Ihrem Linux-Server, indem Sie eine Remote-Desktop-Verbindung herstellen oder eine SSH-Verbindung mit PuTTy herstellen.
 
