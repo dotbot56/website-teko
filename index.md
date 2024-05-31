@@ -5,7 +5,7 @@ layout: mylayout.njk
 
 ### Schritt 1: Installieren zusätzlicher Softwarekomponenten
 
-Verbnden Sie sich mit Ihrem Linux-Server, indem Sie eine Remote-Desktop-Verbindung herstellen oder eine SSH-Verbindung mit PuTTy herstellen.
+Verbinden Sie sich mit Ihrem Linux-Server, indem Sie eine Remote-Desktop-Verbindung herstellen oder eine SSH-Verbindung mit PuTTy herstellen.
 
 ```bash
 apt update
