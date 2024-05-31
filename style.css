@@ -1,0 +1,55 @@
+/* style.css */
+body {
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+h3 {
+    margin-top: 50px;
+    font-size: 1.5em;
+}
+
+pre code {
+    background-color: #f0f0f0;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #d3d3d3;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a:focus, button:focus {
+    outline: 2px solid #005fcc;
+    outline-offset: 2px;
+}
+
+/* Media Queries for mobile devices */
+@media (max-width: 600px) {
+    body {
+        font-size: 0.9em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    pre code {
+        font-size: 0.9em;
+    }
+}
+
+

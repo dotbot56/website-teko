@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DotBot - Pages</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>DotBot - Pages</h1>
+    </header>
+    <main>
+        <h3>Schritt 1: Installieren zusätzlicher Softwarekomponenten</h3>
+<p>Dani ish toll v0.2</p>
+<p>Verbnden Sie sich mit Ihrem Linux-Server, indem Sie eine Remote-Desktop-Verbindung herstellen oder eine SSH-Verbindung mit PuTTy herstellen.</p>
+<pre><code class="language-bash">apt update
+
+#wget Installieren
+apt install wget
+
+#OpenJDK Java runtime environment installieren
+apt install openjdk-17-jre-headless
+
+#Überpüfen ob die Installation erfolgreich war
+java - version
+</code></pre>
+<p><img src="./images/step_1.png" alt="Schritt 1" title="Schritt 1"></p>
+<h3>Schritt 2: Minecraft Server Port aktivieren</h3>
+<p>Nachdem Sie die grundlegenden Komponenten für Ihren Minecraft-Server auf Linux installiert haben, besteht der nächste Schritt darin, den TCP-Port 25565 zu aktivieren. Standardmäßig verwendet die Serveranwendung diesen Port zur Kommunikation mit Clients, daher ist eine entsprechende Firewall-Regel unerlässlich. Verwenden Sie den folgenden Befehl, um die neue Regel hinzuzufügen:</p>
+<pre><code class="language-bash">ufw allow 25565
+</code></pre>
+<p><img src="./images/step_2.png" alt="Schritt 2" title="Schritt 2"></p>
+<h3>Schritt 3: Installieren der Minecraft-Serveranwendung (Java-Edition)</h3>
+<p>Jetzt können Sie die Server-Software des Sandbox-Spiels herunterladen und installieren. Für die beste Kompatibilität verwenden Sie die Java-Edition, und es ist ebenso wichtig, dass Sie eine aktuelle Version dieser Variante verwenden.</p>
+<pre><code class="language-bash">#Erstelle für jeden Minecraft-Server einen Ordner
+mkdir minecraft-server1
+
+#Download des Minecraft-Server
+wget https://launcher.mojang.com/v1/objects/c8f83c5655308435b3dcf03c06d9fe8740a77469/server.jar
+</code></pre>
+<p><img src="./images/step_4a.png" alt="Schritt 4a" title="Schritt 4a"></p>
+<h3>Schritt 4: Ausführen der Serveranwendung zum ersten Mal</h3>
+<p>Starten Sie den Minecraft-Server mit folgender Eingabe:</p>
+<pre><code class="language-bash">java -Xms1G -Xmx2G -jar server.jar nogui
+</code></pre>
+<p>Minecraft: Java Edition Server (hier Version 1.20.4) wird anschließend ohne grafische Benutzeroberfläche (&quot;nogui&quot;) geladen. Für die Ausführung wird 1 Gigabyte als &quot;Start&quot;-Speicher gewährt (&quot;Xms1G&quot;) - der maximale Speicherverbrauch ist auf 2 Gigabyte begrenzt (&quot;Xmx2G&quot;). Natürlich können Sie diese Werte individuell anpassen.</p>
+<p><img src="./images/step_4b.png" alt="Schritt 4b" title="Schritt 4b"></p>
+<p>Wenn Sie den Befehl zum ersten Mal ausführen, werden Sie am Ende des Ladevorgangs die folgenden beiden Fehlermeldungen erhalten:</p>
+<h3>Schritt 5: Konfigurieren des Servers</h3>
+<p>Nachdem Sie der Lizenzvereinbarung zugestimmt haben, können Sie sich der Konfigurationsdatei <code>server.properties</code> zuwenden. Diese wurde beim ersten Start der Serveranwendung ebenfalls im aktuellen Verzeichnis erstellt. Öffnen Sie die Datei mit dem Texteditor nano:</p>
+<pre><code class="language-bash">nano server.properties
+</code></pre>
+<p><img src="./images/step_5.png" alt="Schritt 5" title="Schritt 5"></p>
+<h3>Schritt 6: Starten des Minecraft-Servers</h3>
+<p>Nachdem Sie den EULA-Bedingungen zugestimmt und Ihre individuelle Serverkonfiguration gespeichert haben, können Sie nun den bereits in Schritt 4 verwendeten Befehl zum Starten des Minecraft-Servers ein weiteres Mal in das Linux-Terminal eingeben:</p>
+<pre><code class="language-bash">java -Xms1G -Xmx2G -jar server.jar nogui
+</code></pre>
+<p><img src="./images/step_6.png" alt="Schritt 6" title="Schritt 6"></p>
+<h3>Schritt 7: Verbinden zum Minecraft-Server</h3>
+<p>Ihr Server läuft und Sie können sich nun jederzeit mit der generierten Spielwelt verbinden. Gehen Sie dazu wie folgt vor:</p>
+<ol>
+<li>Starten Sie den Minecraft-Client (Java Edition).</li>
+<li>Wählen Sie &quot;Multiplayer&quot;.</li>
+<li>Klicken Sie auf &quot;Direktverbindung&quot;.</li>
+<li>Geben Sie die IP-Adresse Ihres Minecraft-Servers ein.</li>
+</ol>
+<p>Wenn Sie fertig sind, klicken Sie auf &quot;Server beitreten&quot;.</p>
+<p><img src="./images/step_7.png" alt="Schritt 7" title="Schritt 7"></p>
+<p>Ich hoffe, das hilft Ihnen weiter! Passen Sie die Texte und Bildbeschreibungen nach Bedarf an.</p>
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Rodrigo Fernandez</p>
+    </footer>
+</body>
+</html>
