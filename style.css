@@ -34,6 +34,19 @@ p {
 img {
     max-width: 100%;
     height: auto;
+    display: block;
+    margin: 10px 0;
+}
+
+img[alt="Schritt 1"],
+img[alt="Schritt 2"],
+img[alt="Schritt 3"],
+img[alt="Schritt 4"],
+img[alt="Schritt 5"],
+img[alt="Schritt 6"],
+img[alt="Schritt 7"] {
+    width: 600px;
+    height: 400px;
 }
 
 /* Mobile Styles */
@@ -56,5 +69,16 @@ img {
 
     pre code {
         font-size: 12px;
+    }
+
+    img[alt="Schritt 1"],
+    img[alt="Schritt 2"],
+    img[alt="Schritt 3"],
+    img[alt="Schritt 4"],
+    img[alt="Schritt 5"],
+    img[alt="Schritt 6"],
+    img[alt="Schritt 7"] {
+        width: 100%;
+        height: auto;
     }
 }
