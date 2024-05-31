@@ -3,9 +3,9 @@ title: "DotBot - Pages"
 layout: mylayout.njk
 ---
 
-### Schritt 01: Installieren zusätzlicher Softwarekomponenten
+### Schritt 1: Installieren zusätzlicher Softwarekomponenten
 
-Verbnden Sie sich mit Ihrem Linux-Server, indem Sie eine Remote-Desktop-Verbindung herstellen oder eine SSH-Verbindung mit PuTTy herstellen.
+Verbnden Sie Dani sich mit Ihrem Linux-Server, indem Sie eine Remote-Desktop-Verbindung herstellen oder eine SSH-Verbindung mit PuTTy herstellen.
 
 ```bash
 apt update
