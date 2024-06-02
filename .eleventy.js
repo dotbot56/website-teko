@@ -1,7 +1,7 @@
 module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("style.css");
     eleventyConfig.addPassthroughCopy("images");
-    eleventyConfig.addPassthroughCopy("READNE.md");
+    eleventyConfig.addPassthroughCopy("README.md");
     return {
         dir: {
             input: ".",
