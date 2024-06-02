@@ -3,7 +3,7 @@ body {
     margin: 0 auto;
     padding: 5px;
     max-width: 800px;
-    text-align: justify;
+    text-align: left;
     font-family: Arial, sans-serif;
     background-color: #ffffff;
     color: #000000;
@@ -30,6 +30,7 @@ pre code {
 p {
     font-size: 1em;
     line-height: 1.5em;
+    text-align: justify;
 }
 
 img {
