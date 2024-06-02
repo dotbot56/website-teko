@@ -27,7 +27,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.ELEVENTY_TOKEN }}
+          personal_token: ${{ secrets.GH_PAT }}
           publish_dir: ./_site
           external_repository: dotbot56/dotbot56.github.io
           publish_branch: main
