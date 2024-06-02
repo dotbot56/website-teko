@@ -2,9 +2,9 @@
 
 ## Ausgefüllte Links auf HTML und CSS Validatoren sowie Pagespeed Analyse
 
-- [HTML Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdotbot56.github.io/website-teko/)
-- [CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdotbot56.github.io/website-teko&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=de)
-- [Pagespeed Analyse](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fdotbot56.github.io/website-teko)
+- [HTML Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdotbot56.github.io)
+- [CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdotbot56.github.io&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=de)
+- [Pagespeed Analyse](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fdotbot56.github.io)
 
 ## Verwendeter SSG mit Begründung
 
