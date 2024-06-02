@@ -8,7 +8,7 @@
 
 ## Verwendeter SSG mit Begründung
 
-Für dieses Projekt wurde [Eleventy](https://www.11ty.dev/) als Static Site Generator (SSG) verwendet. Eleventy wurde gewählt, weil es eine einfache Konfiguration und flexible Optionen ohne vorgeschriebenes Framework bietet. Es unterstützt verschiedene Templates und Plugins, die hervorragende Leistung und schnelle Build-Zeiten ermöglichen. Im Vergleich zu anderen SSGs ist Eleventy besonders anpassungsfähig und leichtgewichtig.
+Für dieses Projekt wurde [Eleventy](https://www.11ty.dev/) als Static Site Generator (SSG) verwendet. Eleventy wurde gewählt, weil es im Unterricht behandelt wurde. Dies ermöglicht eine konsistente Lernumgebung und erleichtert die Anwendung des Gelernten in realen Projekten. Es ist ein flexibler und leicht konfigurierbarer Static Site Generator.
 
 ## Deployment und verwendetes Hosting mit Begründung
 
