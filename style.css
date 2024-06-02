@@ -29,6 +29,10 @@ pre code {
 p {
     font-size: 1em;
     line-height: 1.5em;
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-indent: 1.5em;
 }
 
 img {
@@ -36,38 +40,4 @@ img {
     height: auto;
     display: block;
     margin: 10px 0;
-}
-
-/* Mobile Styles */
-@media (max-width: 600px) {
-    body {
-        font-size: 14px;
-    }
-
-    .container {
-        padding: 10px;
-    }
-
-    h1 {
-        font-size: 24px;
-    }
-
-    h2 {
-        font-size: 20px;
-    }
-
-    pre code {
-        font-size: 12px;
-    }
-
-    img[alt="Schritt 1"],
-    img[alt="Schritt 2"],
-    img[alt="Schritt 3"],
-    img[alt="Schritt 4"],
-    img[alt="Schritt 5"],
-    img[alt="Schritt 6"],
-    img[alt="Schritt 7"] {
-        width: 100%;
-        height: auto;
-    }
 }
