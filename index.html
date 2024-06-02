@@ -41,14 +41,21 @@ mkdir minecraft-server1
 #Download des Minecraft-Server
 wget https://launcher.mojang.com/v1/objects/c8f83c5655308435b3dcf03c06d9fe8740a77469/server.jar
 </code></pre>
-<p><img src="./images/step_4a.webp" alt="Schritt 4a" title="Schritt 4a"></p>
 <h2>Schritt 4: Ausführen der Serveranwendung zum ersten Mal</h2>
 <p>Starten Sie den Minecraft-Server mit folgender Eingabe:</p>
 <pre><code class="language-bash">java -Xms1G -Xmx2G -jar server.jar nogui
 </code></pre>
 <p>Minecraft: Java Edition Server (hier Version 1.20.4) wird anschließend ohne grafische Benutzeroberfläche (&quot;nogui&quot;) geladen. Für die Ausführung wird 1 Gigabyte als &quot;Start&quot;-Speicher gewährt (&quot;Xms1G&quot;) - der maximale Speicherverbrauch ist auf 2 Gigabyte begrenzt (&quot;Xmx2G&quot;). Natürlich können Sie diese Werte individuell anpassen.</p>
-<p><img src="./images/step_4b.webp" alt="Schritt 4b" title="Schritt 4b"></p>
 <p>Wenn Sie den Befehl zum ersten Mal ausführen, werden Sie am Ende des Ladevorgangs die folgenden beiden Fehlermeldungen erhalten:</p>
+<p><img src="./images/step_4a.webp" alt="Schritt 4a" title="Schritt 4a"></p>
+<p>Zum einen konnte also die Datei eula.txt nicht geladen werden, zum anderen fehlen dem Minecraft-Server Konfigurationsinformationen, die standardmäßig in der Datei server.properties definiert werden sollen.<br>
+Die Zustimmungsdatei zum Endbenutzer-Lizenzvertrag (EULA) wird anschließend direkt im aktuellen Verzeichnis erzeugt. Sie können die Datei wie folgt öffnen:</p>
+<pre><code class="language-bash">nano eula.txt
+
+#Eula aktzeptieren
+eula=true
+</code></pre>
+<p><img src="./images/step_4b.webp" alt="Schritt 4b" title="Schritt 4b"></p>
 <h2>Schritt 5: Konfigurieren des Servers</h2>
 <p>Nachdem Sie der Lizenzvereinbarung zugestimmt haben, können Sie sich der Konfigurationsdatei <code>server.properties</code> zuwenden. Diese wurde beim ersten Start der Serveranwendung ebenfalls im aktuellen Verzeichnis erstellt. Öffnen Sie die Datei mit dem Texteditor nano:</p>
 <pre><code class="language-bash">nano server.properties
