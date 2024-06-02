@@ -1,8 +1,8 @@
 /* style.css */
 body {
-    margin: 0 auto;
+    margin: 10px auto;
     max-width: 800px;
-    text-align: left;
+    text-align: justify;
     font-family: Arial, sans-serif;
     background-color: #ffffff;
     color: #000000;
@@ -29,10 +29,6 @@ pre code {
 p {
     font-size: 1em;
     line-height: 1.5em;
-    text-align: justify;
-    margin-left: 20px;
-    margin-right: 20px;
-    text-indent: 1.5em;
 }
 
 img {
