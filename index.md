@@ -44,8 +44,6 @@ mkdir minecraft-server1
 wget https://launcher.mojang.com/v1/objects/c8f83c5655308435b3dcf03c06d9fe8740a77469/server.jar
 ```
 
-![Schritt 4a](./images/step_4a.webp "Schritt 4a")
-
 ## Schritt 4: Ausführen der Serveranwendung zum ersten Mal
 
 Starten Sie den Minecraft-Server mit folgender Eingabe:
@@ -56,10 +54,22 @@ java -Xms1G -Xmx2G -jar server.jar nogui
 
 Minecraft: Java Edition Server (hier Version 1.20.4) wird anschließend ohne grafische Benutzeroberfläche ("nogui") geladen. Für die Ausführung wird 1 Gigabyte als "Start"-Speicher gewährt ("Xms1G") - der maximale Speicherverbrauch ist auf 2 Gigabyte begrenzt ("Xmx2G"). Natürlich können Sie diese Werte individuell anpassen.
 
-![Schritt 4b](./images/step_4b.webp "Schritt 4b")
-
 Wenn Sie den Befehl zum ersten Mal ausführen, werden Sie am Ende des Ladevorgangs die folgenden beiden Fehlermeldungen erhalten:
 
+![Schritt 4a](./images/step_4a.webp "Schritt 4a")
+
+Zum einen konnte also die Datei eula.txt nicht geladen werden, zum anderen fehlen dem Minecraft-Server Konfigurationsinformationen, die standardmäßig in der Datei server.properties definiert werden sollen.  
+Die Zustimmungsdatei zum Endbenutzer-Lizenzvertrag (EULA) wird anschließend direkt im aktuellen Verzeichnis erzeugt. Sie können die Datei wie folgt öffnen:
+
+
+```bash
+nano eula.txt
+
+#Eula aktzeptieren
+eula=true
+```
+
+![Schritt 4b](./images/step_4b.webp "Schritt 4b")
 ## Schritt 5: Konfigurieren des Servers
 
 Nachdem Sie der Lizenzvereinbarung zugestimmt haben, können Sie sich der Konfigurationsdatei `server.properties` zuwenden. Diese wurde beim ersten Start der Serveranwendung ebenfalls im aktuellen Verzeichnis erstellt. Öffnen Sie die Datei mit dem Texteditor nano:
