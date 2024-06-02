@@ -29,3 +29,5 @@ jobs:
         with:
           github_token: ${{ secrets.ELEVENTY_TOKEN }}
           publish_dir: ./_site
+          external_repository: dotbot56/dotbot56.github.io
+          publish_branch: main
